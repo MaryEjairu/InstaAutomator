@@ -21,26 +21,26 @@ A Python bot that automates common Instagram activities such as liking posts by 
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/instagram-automation-bot.git
-   cd instagram-automation-bot
+   git clone https://github.com/MaryEjairu/InstaAutomator.git
+   cd InstaAutomator
 
 2. (Optional) Create and activate a virtual environment:
-
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+    ```
+   python3 -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
 
 
 3. Install dependencies:
+   ```
+   pip install -r requirements.txt
 
-pip install -r requirements.txt
 
+5. Set environment variables for Instagram credentials
+   ```
+   export IG_USERNAME="your_username"
+   export IG_PASSWORD="your_password"
 
-4. Set environment variables for Instagram credentials:
-
-export IG_USERNAME="your_username"
-export IG_PASSWORD="your_password"
-
-(On Windows, use set instead of export)
+**(On Windows, use set instead of export)**
 
 
 
