@@ -1,6 +1,6 @@
 # InstaInsights
 
-Instagram Analytics & Content Planning Dashboard — upload your Instagram data via CSV, explore detailed analytics, plan your content calendar, and optimize your social media strategy.
+A Instagram Analytics & Content Planning Dashboard. You can upload your Instagram data via CSV, explore detailed analytics, plan your content calendar, and optimize your social media strategy.
 
 ## Features
 
