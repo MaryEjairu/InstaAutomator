@@ -1,77 +1,65 @@
-# Instagram Automation Bot
+# InstaInsights
 
-A Python bot that automates common Instagram activities such as liking posts by hashtag, sending direct messages to followers, and commenting on posts using predefined messages.
+Instagram Analytics & Content Planning Dashboard — upload your Instagram data via CSV, explore detailed analytics, plan your content calendar, and optimize your social media strategy.
 
 ## Features
 
-- Auto-like posts based on specified hashtags  
-- Send personalized direct messages to followers  
-- Auto-comment on posts under chosen hashtags with randomized comments  
-- Mimics human behavior with randomized delays to avoid detection  
-- Secure login using environment variables for credentials  
+- Upload CSV data with Instagram post metrics  
+- Visualize performance with charts and engagement insights  
+- Plan and schedule posts using an interactive content calendar  
+- Manage content ideas and track hashtag suggestions  
+- Export detailed reports for your team or personal review  
 
-## Prerequisites
+## Required CSV Format
 
-- Python 3.7 or higher  
-- Instagram account  
-- Access to Instagram credentials (username and password)  
-- Installed dependencies (see `requirements.txt`)
+To get started, prepare a CSV file with these columns:
 
-## Installation
+| Column       | Description                        | Format           |
+|--------------|----------------------------------|------------------|
+| `date`       | Date the post was published       | YYYY-MM-DD       |
+| `likes`      | Number of likes on the post       | Integer          |
+| `comments`   | Number of comments on the post    | Integer          |
+| `reach`      | Number of unique accounts reached | Integer          |
+| `impressions`| Number of total impressions       | Integer          |
+| `post_type`  | Type of post (photo, video, carousel) | Text             |
+| `hashtags`   | Hashtags used in the post (optional)  | Comma-separated  |
 
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/MaryEjairu/InstaAutomator.git
-   cd InstaAutomator
+## Usage Instructions
 
-2. (Optional) Create and activate a virtual environment:
+1. **Prepare your CSV file**  
+   Ensure your Instagram data CSV follows the required format above.
+
+2. **Upload your CSV**  
+   Use the file uploader in the dashboard sidebar to upload your data.
+
+3. **Explore the Dashboard**  
+   - View analytics pages for engagement, reach, and post types  
+   - Use the content calendar to plan and organize posts  
+   - Track content ideas and access hashtag recommendations
+
+4. **Export Reports**  
+   Generate and export reports to share with your team or for further analysis.
+
+## Getting Started
+
+### Installation (for local use)
+
     ```
-   python3 -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
+    git clone https://github.com/yourusername/InstaInsights.git
+    
+    cd InstaInsights
+    
+    pip install -r requirements.txt
+    
+    python app.py
+
+(Adjust commands as per your environment and project setup)
 
 
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
+---
 
+### Contributing
 
-5. Set environment variables for Instagram credentials
-   ```
-   export IG_USERNAME="your_username"
-   export IG_PASSWORD="your_password"
-
-**(On Windows, use set instead of export)**
-
-
-
-## Usage
-
-1. Run the bot script:
-   ```
-   python bot.py
-
-
-**Customize the hashtags, direct message text, and comments list inside the script as needed.**
-
-## Security
-
-- Credentials are loaded from environment variables to avoid hardcoding sensitive info.
-
-- Use a dedicated Instagram account to reduce risk of bans.
-
-
-## Limitations and Warnings
-
-- Instagram’s policies prohibit automation that violates their terms of service; use responsibly.
-
-- Excessive automated actions may lead to account restrictions or bans.
-
-- Adjust delays and action limits in the script to mimic natural activity.
-
-
-## Contributing
-
-Feel free to submit issues or pull requests to improve this bot!
-
+Contributions, issues, and feature requests are welcome! Feel free to open a pull request or submit issues.
 
 **Built with ❤️ by Mary Ejairu**
